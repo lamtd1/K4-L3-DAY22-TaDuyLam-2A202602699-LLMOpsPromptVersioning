@@ -25,6 +25,8 @@ PROVIDER = os.getenv("PROVIDER", "openai").lower()
 # ── OpenAI ────────────────────────────────────────────────────────────────
 OPENAI_API_KEY         = os.getenv("OPENAI_API_KEY", "")
 OPENAI_BASE_URL        = os.getenv("OPENAI_BASE_URL", "")   # để trống nếu dùng OpenAI chính thức
+OPENAI_EMBEDDING_BASE_URL = os.getenv("OPENAI_EMBEDDING_BASE_URL", "")  # endpoint embedding riêng (tuỳ chọn)
+OPENAI_EMBEDDING_API_KEY  = os.getenv("OPENAI_EMBEDDING_API_KEY", "")
 OPENAI_MODEL           = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
 

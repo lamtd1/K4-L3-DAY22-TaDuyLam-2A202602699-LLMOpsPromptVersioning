@@ -109,10 +109,12 @@ def get_embeddings(provider: str = None):
         from langchain_openai import OpenAIEmbeddings
         kwargs = {
             "model": config.OPENAI_EMBEDDING_MODEL,
-            "api_key": config.OPENAI_API_KEY,
+            "api_key": config.OPENAI_EMBEDDING_API_KEY or config.OPENAI_API_KEY,
         }
-        if config.OPENAI_BASE_URL:
-            kwargs["base_url"] = config.OPENAI_BASE_URL
+        base_url = config.OPENAI_EMBEDDING_BASE_URL or config.OPENAI_BASE_URL
+        if base_url:
+            kwargs["base_url"] = base_url
+            kwargs["check_embedding_ctx_length"] = False  # proxy không nhận token-id
         return OpenAIEmbeddings(**kwargs)
 
     elif provider == "gemini":

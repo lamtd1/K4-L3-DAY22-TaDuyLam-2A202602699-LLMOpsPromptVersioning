@@ -79,6 +79,7 @@ git status                      # KHÔNG thấy .env
 
 ## Checkpoint 1 — RAG Pipeline + LangSmith tracing (25đ, 25–45 phút)
 
+
 **Mục tiêu:** load dữ liệu → chunk → embed → index FAISS → chain hỏi đáp → gắn `@traceable` để mỗi câu hỏi thành 1 trace trên LangSmith.
 
 ### Cần làm
