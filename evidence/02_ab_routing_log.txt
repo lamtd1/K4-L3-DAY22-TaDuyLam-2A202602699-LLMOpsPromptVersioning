@@ -2,8 +2,10 @@
   Bước 2: Prompt Hub & A/B Routing
 ============================================================
 ✅ Config OK  |  Provider: OPENAI  |  Project: day22-lab
-⚠️  V1 lỗi: Conflict for /commits/-/lamtd-rag-prompt-v1. HTTPError('409 Client Error: Conflict for url: https://api.smith.langchain.com/commits/-/lamtd-rag-prompt-v1', '{"error":"Nothing to commit: prompt has not changed since latest commit"}\n')
-⚠️  V2 lỗi: Conflict for /commits/-/lamtd-rag-prompt-v2. HTTPError('409 Client Error: Conflict for url: https://api.smith.langchain.com/commits/-/lamtd-rag-prompt-v2', '{"error":"Nothing to commit: prompt has not changed since latest commit"}\n')
+✅ Đã push V1 → https://smith.langchain.com/o/92f96ae8-8bb6-42ba-82f1-a3dfe51f4d5a/r/2025-10/lamtd-rag-prompt-v1
+✅ Đã push V2 → https://smith.langchain.com/o/92f96ae8-8bb6-42ba-82f1-a3dfe51f4d5a/r/2025-10/lamtd-rag-prompt-v2
+↓ Đã pull 'lamtd-rag-prompt-v1' từ Hub
+↓ Đã pull 'lamtd-rag-prompt-v2' từ Hub
 🔨 Đang tạo FAISS index từ 107 chunks ...
 ✅ FAISS vectorstore đã sẵn sàng.
 [01] [prompt-v2] What are the three main types of machine learning?...
